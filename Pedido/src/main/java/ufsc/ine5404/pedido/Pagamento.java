@@ -6,7 +6,7 @@ public class Pagamento {
     private Pedido pedido;
     private Cliente cliente;
 
-    public String getDados() {
-        return "Cliente:" + cliente.dados() + "\n\nData " + data + "\nValor Total do Pedido: R$" + pedido.valorTotal();
+    String getDados() {
+        return "Cliente:" + cliente.getDados() + "\n\nData " + data + "\nValor Total do Pedido: R$" + pedido.getValorTotal();
     }
 }
