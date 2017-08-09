@@ -6,6 +6,6 @@ public class Cliente {
     private int CPF;
 
     public String dados() {
-        return nome + ", " + ", " + CPF + ", " + endereco;
+        return "\nNome: " + nome + "\nCPF: " + CPF + "\nEndereço: " + endereco;
     }
 }
