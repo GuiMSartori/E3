@@ -19,7 +19,7 @@ public class Ponto3D extends Ponto {
 
     @Override
     public String toString() {
-        return "Ponto3D{" + "z=" + z + '}';
+        return "Ponto3D{ x=" + getX() + "y=" + getY() + "z=" + z + '}';
     }
 
 }
