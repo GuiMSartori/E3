@@ -4,6 +4,11 @@ public class Ponto3D extends Ponto {
 
     private int z;
 
+    public Ponto3D(int z, int x, int y) {
+        super(x, y);
+        this.z = z;
+    }
+
     public int getZ() {
         return z;
     }

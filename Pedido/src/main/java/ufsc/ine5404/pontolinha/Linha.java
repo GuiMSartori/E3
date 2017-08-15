@@ -2,32 +2,37 @@ package ufsc.ine5404.pontolinha;
 
 public class Linha {
 
-    private Ponto pontoinicial, pontofinal;
+    private Ponto pontoInicial, pontoFinal;
 
-    public Linha(Ponto pontoinicial, Ponto pontofinal) {
-        this.pontoinicial = pontoinicial;
-        this.pontofinal = pontofinal;
+    public Linha(Ponto2D pontoInicial, Ponto2D pontoFinal) {
+        this.pontoInicial = pontoInicial;
+        this.pontoFinal = pontoFinal;
     }
 
-    public Ponto getPontoinicial() {
-        return pontoinicial;
+    public Linha(Ponto3D pontoInicial, Ponto3D pontoFinal) {
+        this.pontoInicial = pontoInicial;
+        this.pontoFinal = pontoFinal;
     }
 
-    public void setPontoinicial(Ponto pontoinicial) {
-        this.pontoinicial = pontoinicial;
+    public Ponto getPontoInicial() {
+        return pontoInicial;
     }
 
-    public Ponto getPontofinal() {
-        return pontofinal;
+    public void setPontoInicial(Ponto pontoInicial) {
+        this.pontoInicial = pontoInicial;
     }
 
-    public void setPontofinal(Ponto pontofinal) {
-        this.pontofinal = pontofinal;
+    public Ponto getPontoFinal() {
+        return pontoFinal;
+    }
+
+    public void setPontoFinal(Ponto pontoFinal) {
+        this.pontoFinal = pontoFinal;
     }
 
     @Override
     public String toString() {
-        return "Linha{" + "pontoinicial=" + pontoinicial + ", pontofinal=" + pontofinal + '}';
+        return "Linha{" + "pontoInicial=" + pontoInicial + ", pontoFinal=" + pontoFinal + '}';
     }
 
 }
